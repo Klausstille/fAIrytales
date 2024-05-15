@@ -2,11 +2,11 @@
 
 ## GPT-4 Vision and Eleven Labs AI Speech experiment
 
-![Main Page](public/page-1.png)
-![Main Page](public/page-2.png)
-![Main Page](public/page-3.png)
-![Main Page](public/page-4.png)
-![Main Page](public/page-5.png)
+![Main Page](public/page-1bis.png)
+![Main Page](public/page-2bis.png)
+![Main Page](public/page-3bis.png)
+![Main Page](public/page-4bis.png)
+![Main Page](public/page-5bis.png)
 
 ## Overview
 
