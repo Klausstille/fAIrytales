@@ -7,7 +7,7 @@ import "./globals.css";
 const gruppo = Inter({ subsets: ["latin"], weight: "500" });
 
 export const metadata: Metadata = {
-    title: "fAIrytale",
+    title: "fAIrytales",
     description:
         "Explore genuine moments captured by Klaus Stille, enhanced with a touch of AI. From vivid photographs to AI-generated narratives and sounds.",
 };
