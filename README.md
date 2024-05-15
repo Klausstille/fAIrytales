@@ -1,4 +1,4 @@
-# ImageNarrator 👾 AI-Enhanced Photography Portfolio 👾
+# 👾 fAIrytales 👾
 
 ## GPT-4 Vision and Eleven Labs AI Speech experiment
 
@@ -7,9 +7,6 @@
 ![Main Page](public/page-3.png)
 ![Main Page](public/page-4.png)
 ![Main Page](public/page-5.png)
-![Main Page](public/page-6.png)
-![Main Page](public/page-7.png)
-![Main Page](public/page-8.png)
 
 ## Overview
 
