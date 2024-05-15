@@ -1,0 +1,226 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    cursor: none !important;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::selection {
+    background-color: transparent !important;
+    color: none !important;
+}
+
+header {
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent 0,
+        transparent 50px,
+        black 550px,
+        black calc(100% - 550px),
+        transparent calc(100% - 50px),
+        transparent 100%
+    );
+    mask-image: linear-gradient(
+        to right,
+        transparent 0,
+        transparent 50px,
+        black 550px,
+        black calc(100% - 550px),
+        transparent calc(100% - 50px),
+        transparent 100%
+    );
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    left: 50%;
+    top: 3;
+    z-index: 10;
+}
+
+img {
+    user-select: none;
+    font-size: 11px;
+    line-height: 1.2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: rgb(77, 77, 77);
+}
+
+body {
+    background-color: #171717;
+    overflow: hidden;
+    cursor: none !important;
+}
+
+.page {
+    background-color: black !important;
+}
+
+.galleryContainer {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.imageContainer {
+    height: 100vh;
+    scroll-snap-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+button,
+input {
+    padding: 0 0.5rem;
+    text-align: center;
+    outline: none !important;
+}
+input::selection {
+    background-color: yellow !important;
+    color: none !important;
+}
+
+input::placeholder {
+    opacity: 0.3;
+    color: white;
+}
+
+.dotAnimation {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+        filter: blur(3px);
+    }
+}
+
+.typing-animation {
+    display: flex;
+}
+
+.dot {
+    width: 3px;
+    height: 3px;
+    margin: 0 8px;
+    margin-bottom: 12px;
+    opacity: 1;
+    border-radius: 50%;
+    animation: pulse-small 1.4s infinite;
+}
+.dot-col-white {
+    background-color: white;
+}
+.dot-col-red {
+    background-color: white;
+}
+
+.dot:nth-child(1) {
+    animation-delay: 0s;
+}
+.dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes pulse-small {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+        filter: blur(0.1px);
+    }
+}
+
+@keyframes submitAudioBackgroundAnimation {
+    0% {
+        background-color: lime;
+        border: lime;
+    }
+    50% {
+        background-color: rgb(251, 255, 0);
+        border: rgb(251, 255, 0);
+    }
+    100% {
+        background-color: lime;
+        border: lime;
+    }
+}
+
+.submitAudioAnimation {
+    animation: submitAudioBackgroundAnimation 1s infinite linear;
+}
+
+/*********** FILTER MENU ***********/
+.hamburger {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+}
+.hamburger:hover {
+    opacity: 1;
+}
+
+.hamburger__bar--top,
+.hamburger__bar--mid,
+.hamburger__bar--bot {
+    transform-origin: initial;
+    stroke-width: 1.2px;
+    transition: all 0.3s ease-in-out;
+}
+.is-opened .hamburger__bar--top {
+    transform: rotate(45deg) translateY(0) translateX(0);
+}
+.is-opened .hamburger__bar--mid {
+    opacity: 0;
+}
+.is-opened .hamburger__bar--bot {
+    transform: rotate(-45deg) translateY(0em) translateX(0em);
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        -webkit-mask-image: linear-gradient(
+            to right,
+            transparent 0,
+            transparent 50px,
+            black 150px,
+            black calc(100% - 150px),
+            transparent calc(100% - 50px),
+            transparent 100%
+        );
+        mask-image: linear-gradient(
+            to right,
+            transparent 0,
+            transparent 50px,
+            black 150px,
+            black calc(100% - 150px),
+            transparent calc(100% - 50px),
+            transparent 100%
+        );
+    }
+    .dot {
+        width: 2px;
+        height: 2px;
+        margin-bottom: 10px;
+    }
+}
