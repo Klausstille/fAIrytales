@@ -89,8 +89,8 @@ const FooterNav = ({
                     } ${textClasses} ${hoverClasses} bottom-4 absolute origin-left left-4 flex items-end gap-2 z-[997]`}
                 >
                     <p className="max-tablet:text-xl text-3xl">
-                        {(loadingSpeech && "weAvIng words") ||
-                            (startingSpeech && "narrAtIng")}{" "}
+                        {(loadingSpeech && "weaving words") ||
+                            (startingSpeech && "narrating")}{" "}
                     </p>
                     {(loadingSpeech || startingSpeech) && (
                         <div className="typing-animation">
