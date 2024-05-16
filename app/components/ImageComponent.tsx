@@ -122,7 +122,7 @@ const ImageComponent = ({
                 width={projectData[activeIndex]?.image.width ?? 0}
                 height={projectData[activeIndex]?.image.height ?? 0}
                 priority
-                className="h-[80vh] grayscale max-tablet:max-w-[90%] max-tablet:h-auto object-contain w-auto rounded-xl"
+                className="h-[80vh] grayscale max-tablet:max-w-[90%] max-tablet:h-auto object-contain w-auto rounded-[50px]"
                 draggable="false"
                 onClick={(e) => {
                     e.stopPropagation();
