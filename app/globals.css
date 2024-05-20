@@ -202,19 +202,19 @@ input::placeholder {
         -webkit-mask-image: linear-gradient(
             to right,
             transparent 0,
-            transparent 50px,
-            black 150px,
+            transparent 70px,
+            black 130px,
             black calc(100% - 150px),
-            transparent calc(100% - 50px),
+            transparent calc(100% - 70px),
             transparent 100%
         );
         mask-image: linear-gradient(
             to right,
             transparent 0,
-            transparent 50px,
-            black 150px,
+            transparent 70px,
+            black 130px,
             black calc(100% - 150px),
-            transparent calc(100% - 50px),
+            transparent calc(100% - 70px),
             transparent 100%
         );
     }

@@ -241,6 +241,7 @@ export default function Home() {
                     setActiveText={setActiveText}
                     setHoveredItem={setHoveredItem}
                     setShowImageGallery={setShowImageGallery}
+                    handleScrollToIndex={handleScrollToIndex}
                 />
             </main>
             <FooterNav

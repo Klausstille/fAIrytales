@@ -39,7 +39,7 @@ const NavigationButtons = ({
                         onClick={() => {
                             handleScrollToIndex(index);
                         }}
-                        className={`w-[30px] px-[15px] text-white ${
+                        className={`w-[30px] px-[15px] max-tablet:w-[20px] max-tablet:px-[10px] text-white ${
                             activeIndex === index ? "opacity-100" : "opacity-50"
                         } hover:opacity-100 text-sm`}
                     >
