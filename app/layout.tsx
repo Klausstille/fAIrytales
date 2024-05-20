@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { Viewport } from "next";
 import { Inter } from "next/font/google";
 import { SessionProviderComp } from "./components/SessionProvider";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 const gruppo = Inter({ subsets: ["latin"], weight: "500" });
@@ -26,7 +27,10 @@ export default function RootLayout({
     return (
         <html lang="en">
             <SessionProviderComp>
-                <body className={gruppo.className}>{children}</body>
+                <body className={gruppo.className}>
+                    {children}
+                    <Analytics />
+                </body>
             </SessionProviderComp>
         </html>
     );

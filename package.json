@@ -10,6 +10,7 @@
     },
     "dependencies": {
         "@auth/mongodb-adapter": "^2.0.1",
+        "@vercel/analytics": "^1.2.2",
         "ai": "^2.2.35",
         "framer-motion": "^11.0.5",
         "mongodb": "^6.1.0",
