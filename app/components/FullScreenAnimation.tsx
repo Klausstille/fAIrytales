@@ -62,7 +62,7 @@ export default function FullScreenAnimation({
                         setIsFullscreen && setIsFullscreen(false);
                     }}
                 >
-                    <motion.img
+                    <MotionImage
                         src={projectData[activeIndex]?.image.url || ""}
                         alt={
                             projectData[activeIndex]?.audioFile?.description ||
